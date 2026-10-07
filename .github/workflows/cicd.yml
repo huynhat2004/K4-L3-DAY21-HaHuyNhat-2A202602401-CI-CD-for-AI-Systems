@@ -4,9 +4,13 @@ on:
   push:
     branches: [main]
     paths:
+      - '.github/workflows/**'
+      - '.dvc/**'
       - 'data/**.dvc'
       - 'src/**.py'
+      - 'tests/**.py'
       - 'params.yaml'
+      - 'requirements.txt'
   workflow_dispatch:
 
 permissions:
